@@ -1,23 +1,27 @@
 package com.example.dell.quake_report;
 
+import java.util.List;
+
 /**
  * Created by DELL on 12/22/2017.
  */
 
 public class Earthquake {
 
-    private String mMagnitude;
+    private double mMagnitude;
     private String mLocation;
-    private String mDate;
+    private long mTime;
+    private String mUrl;
 
 
-    public Earthquake(String Magnitude, String Location, String Date) {
-        mMagnitude = Magnitude;
-        mLocation = Location;
-        mDate = Date;
+    public Earthquake(double magnitude, String location, long time, String url) {
+        mMagnitude = magnitude;
+        mLocation = location;
+        mTime = time;
+        mUrl = url;
     }
 
-    public String getMagnitude() {
+    public double getMagnitude() {
         return mMagnitude;
     }
 
@@ -25,8 +29,10 @@ public class Earthquake {
         return mLocation;
     }
 
-    public String getDate() {
-        return mDate;
+    public long getTime() {
+        return mTime;
     }
+
+    public String getUrl() {return mUrl;}
 
 }

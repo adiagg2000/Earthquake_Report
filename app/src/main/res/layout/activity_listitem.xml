@@ -30,6 +30,14 @@
         android:textColor="@android:color/black"
         tools:text="Mar 6, 2010" />
 
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        tools:text="Mar 6, 2010"/>
+
 </LinearLayout>
 
 
